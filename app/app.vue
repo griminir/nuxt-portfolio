@@ -1,15 +1,10 @@
+<script setup lang="ts">
+import { NuxtLayout } from '#components';
+
+</script>
+
 <template>
-  <nav>
-    <ul>
-      <li>
-        <NuxtLink to="/">Home</NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/about">About</NuxtLink>
-      </li>
-    </ul>
-  </nav>
-  <div>
+  <NuxtLayout>
     <NuxtPage />
-  </div>
+  </NuxtLayout>
 </template>
