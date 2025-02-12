@@ -1,6 +1,4 @@
 <template>
-  <div>Projects</div>
-
   <section v-if="pending">Loading...</section>
   <section v-else-if="error"> error getting stuff</section>
   <section v-else>
