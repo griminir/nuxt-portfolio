@@ -10,7 +10,7 @@
       </div>
       <NavBar />
     </header>
-    <main>
+    <main class="p-2 mt-10">
       <slot />
     </main>
   </div>
