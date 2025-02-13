@@ -1,14 +1,19 @@
 <template>
   <div class="container mx-auto max-w-2xl">
     <header class="flex justify-between items-center mt-5">
-      <div>
-        <NuxtLink
-          to="/"
-          class="text-2xl font-bold p-2 hover:bg-gray-200 hover:text-orange-700"
-          >Viktor E. Degray</NuxtLink
-        >
+      <div class="flex items-center space-x-12">
+        <div>
+          <NuxtLink
+            to="/"
+            class="text-2xl font-bold p-2 hover:bg-gray-200 hover:text-orange-700"
+            >Viktor E. Degray</NuxtLink
+          >
+        </div>
+        <NavBar />
       </div>
-      <NavBar />
+      <ClientOnly>
+        <ColorModeSelector />
+      </ClientOnly>
     </header>
     <main class="p-2 mt-10">
       <slot />
@@ -36,5 +41,9 @@ useHead({
 <style>
 body {
   font-family: 'Roboto';
+}
+
+body {
+  @apply bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300;
 }
 </style>
